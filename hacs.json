@@ -1,0 +1,7 @@
+{
+	"name": "Tuya",
+	"content_in_root": false,
+	"homeassistant": "2024.1.0",
+	"iot_class": "Cloud Push",
+	"render_readme": true
+}
