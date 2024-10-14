@@ -4,11 +4,11 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass, field
+import enum
 import logging
 
 from tuya_iot import TuyaCloudOpenAPIEndpoint
 
-from homeassistant.backports.enum import StrEnum
 from homeassistant.components.sensor import SensorDeviceClass
 from homeassistant.const import (
     CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,
@@ -59,7 +59,7 @@ PLATFORMS = [
 ]
 
 
-class WorkMode(StrEnum):
+class WorkMode(enum.StrEnum):
     """Work modes."""
 
     COLOUR = "colour"
@@ -68,7 +68,7 @@ class WorkMode(StrEnum):
     WHITE = "white"
 
 
-class DPType(StrEnum):
+class DPType(enum.StrEnum):
     """Data point types."""
 
     BOOLEAN = "Boolean"
@@ -79,7 +79,7 @@ class DPType(StrEnum):
     STRING = "String"
 
 
-class DPCode(StrEnum):
+class DPCode(enum.StrEnum):
     """Data Point Codes used by Tuya.
 
     https://developer.tuya.com/en/docs/iot/standarddescription?id=K9i5ql6waswzq
