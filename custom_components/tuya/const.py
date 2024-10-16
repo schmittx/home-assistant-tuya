@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass, field
-import enum
+from enum import StrEnum
 import logging
 
 from tuya_iot import TuyaCloudOpenAPIEndpoint
@@ -59,7 +59,7 @@ PLATFORMS = [
 ]
 
 
-class WorkMode(enum.StrEnum):
+class WorkMode(StrEnum):
     """Work modes."""
 
     COLOUR = "colour"
@@ -68,7 +68,7 @@ class WorkMode(enum.StrEnum):
     WHITE = "white"
 
 
-class DPType(enum.StrEnum):
+class DPType(StrEnum):
     """Data point types."""
 
     BOOLEAN = "Boolean"
@@ -79,7 +79,7 @@ class DPType(enum.StrEnum):
     STRING = "String"
 
 
-class DPCode(enum.StrEnum):
+class DPCode(StrEnum):
     """Data Point Codes used by Tuya.
 
     https://developer.tuya.com/en/docs/iot/standarddescription?id=K9i5ql6waswzq
