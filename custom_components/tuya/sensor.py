@@ -35,6 +35,8 @@ from .const import (
 class TuyaSensorEntityDescription(SensorEntityDescription):
     """Describes Tuya sensor entity."""
 
+    translation_key: str | None = "all"
+
 
 SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
     # Star Projector

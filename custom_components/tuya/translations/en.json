@@ -19,7 +19,7 @@
     },
     "entity": {
         "sensor": {
-            "mode": {
+            "all": {
                 "state": {
                     "colour": "Colour",
                     "scene": "Scene",
